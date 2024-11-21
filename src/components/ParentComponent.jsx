@@ -1,8 +1,8 @@
-import { useState } from 'react';
-import ChildComponent from './ChildComponent';
+import { useState } from "react";
+import ChildComponent from "./ChildComponent";
 
 const ParentComponent = () => {
-  const [text, setText] = useState('');
+  const [text, setText] = useState("");
 
   const handleTextChange = (newText) => {
     setText(newText);

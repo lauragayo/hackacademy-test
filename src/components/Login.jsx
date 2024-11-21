@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { login, logout } from "../features/userSlice";
-import Cart from './Cart';
+import Cart from "./Cart";
 
 function Login() {
   const isLoggedIn = useSelector((state) => state.user.isLoggedIn);

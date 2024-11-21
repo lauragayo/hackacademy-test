@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { addItem, removeItem } from '../features/cartSlice';
+import React, { useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { addItem, removeItem } from "../features/cartSlice";
 
 function Cart() {
   const cartItems = useSelector((state) => state.cart.items);
-  const [newItem, setNewItem] = useState('');
+  const [newItem, setNewItem] = useState("");
   const dispatch = useDispatch();
 
   return (
@@ -25,7 +25,9 @@ function Cart() {
         onChange={(e) => setNewItem(e.target.value)}
         placeholder="Agregar producto"
       />
-      <button onClick={() => dispatch(addItem(newItem))}>Agregar al carrito</button>
+      <button onClick={() => dispatch(addItem(newItem))}>
+        Agregar al carrito
+      </button>
     </div>
   );
 }
